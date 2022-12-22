@@ -20,12 +20,42 @@ Paleta de Cores 2
 Zee Rucci - Coleção/Moda Íntima
 Duduka - Infantil menina / DDK - Infantil menino
 Zigurat - Jeans Adulto 
-BGO - Camiseta Ad
-Decoy - Camiseta Ad
-Hezag - Camiseta Ad
-SGLUM - Camiseta Ad
-Shape - Camiseta/Short
+
+BGO - Camiseta Ad / Casual
+Decoy - Camiseta Ad / Casual
+Hezag - Camiseta Ad / Casual
+SGLUM - Camiseta Ad / Casual
+Shape - Camiseta/Short / Casual
 
 
-Sessões: 
-	- Slide de Banners
+Categoria [Moda Intima]
+	Marca [Zee Rucci]
+		imagem
+		catálogo
+
+Categoria [Infantil]
+	Marca [Duduka & DDK]
+		imagem
+		catálogo
+
+Categoria [Jeans]
+	Marca [Zigurat]
+		imagem
+		catálogo
+
+Categoria [Casual]
+	Marca [BGO]
+		imagem
+		catálogo
+	Marca [Decoy]
+		imagem
+		catálogo
+	Marca [Hezag]
+		imagem
+		catálogo
+	Marca [SGLUM]
+		imagem
+		catálogo
+	Marca [Shape]
+		imagem
+		catálogo

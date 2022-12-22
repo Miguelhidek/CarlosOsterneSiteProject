@@ -12,6 +12,8 @@ body{
 }
 
 header{
+	position: fixed;
+	z-index: 99;
 	width: 100%;
 	height: 70px;
 	display: flex;
@@ -35,6 +37,10 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.menu-opener{
+	display: none;
 }
 
 nav ul li{
@@ -194,6 +200,7 @@ section .section-content{
 	justify-content: center;
 	align-items: center;
 	transition: all .5s;
+	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -221,7 +228,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 300px;
+	min-height: 300px;
 	background-color: #111;
 }
 
@@ -344,7 +351,6 @@ footer{
 	text-transform: uppercase;
 	transition: all .3s;
 	cursor: pointer;
-	box-shadow: 0px 2px 2px #BBB;
 }
 
 .coletion-menu-item:hover{
@@ -354,22 +360,26 @@ footer{
 
 .coletion{
 	width: 100%;
-	height: calc(2 * 750px);
+	height: calc(1 * 750px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	margin-top: 0px;
+	transition: all 1.5s;
 }
 
 .coletion-item{
 	width: 100%;
-	height: 750px;
+	min-height: 750px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	border: 0px solid #00A;
+}
+
+.coletion-par{
+	flex-direction: row-reverse;	
 }
 
 .coletion-item div{
@@ -408,6 +418,24 @@ footer{
 .coletion-item-description span{
 	margin: 5px 0;
 	text-transform: uppercase;
+}
+
+.coletion-pointer-container{
+	position: absolute;
+	display: flex;
+	padding: 10px;
+	margin-top: 355px;
+	flex-direction: column;
+}
+
+.pointer-container{
+	width: 15px;
+	height: 15px;
+	border-radius: 8px;
+	border: 2px solid #818102;
+	background-color: #FFF;
+	margin: 5px 0;
+	cursor: pointer;
 }
 
 .section-news{
@@ -489,22 +517,22 @@ footer{
 
 .section-partners{
 	width: 100%;
-	height: 80%;
+	min-height: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	border:0px solid #A00;
 }
 
 .partners-logo-container{
 	width: 100%;
-	height: 300px;
+	min-height: 300px;
+	height: auto;
 	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border:0px solid #A00;
+	flex-wrap: wrap;
 }
 
 .partners-logo{
@@ -514,15 +542,16 @@ footer{
 	width: 150px;
 	height: 150px;
 	margin: 10px;
-	padding: 10px;
+	padding: 5px;
 	background-color: #FFF;
 	border: 2px solid #585956;
 	transition: all .5s;
 }
 
 .actived-partners{
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
+	border: 2px solid #F2E852;
 	margin: 0;
 }
 
@@ -542,7 +571,7 @@ footer{
 
 .section-contact-left, .section-contact-right{
 	width: 100%;
-	min-height: 80%;
+	min-height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -589,3 +618,401 @@ footer{
 	padding: 5px;	
 	height: 50px;
 }
+
+
+
+
+
+/* Responsive Área */
+
+
+
+@media (min-width: 450px) and (max-width: 850px){
+	header{
+		position: fixed;
+		z-index: 99;
+	}
+	.header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-container{
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		width: 100vw;
+		height: 0;
+		overflow: hidden;
+		margin-top: 70px;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		transition: all .5s;
+	}
+
+	.menu-opener{
+		display: flex;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	nav{
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+	}
+
+	nav ul li{
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+		border:0;
+	}
+
+	nav a{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 10px;
+		color:#585956;
+		font-size: 32px;
+		height: 50px;
+		border:0;
+		text-transform: uppercase;
+		padding: 10px;
+		cursor: pointer;
+	}
+	nav a:hover {
+		color: #585956;
+		border-bottom: 5px solid #c0c2bf;
+	}
+
+	section .section-content{
+		padding: 20px;
+	}
+
+	.section-informations{
+		width: 100%;
+	}
+
+	.section-news{
+		width: 100%;
+		margin: 10px 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.news-banners{
+		width: 100%;
+		margin: 5px 0;
+		overflow: hidden;
+	}
+
+	.section-news-container{
+		width: 1100px;
+		display: flex;
+		margin-left: 0px;
+		padding: 0;
+		transition: all .5s;
+
+	}
+
+	.news{
+		width: 1100px;
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		background-color: #DDD;
+	}
+
+	.news img{
+		width: 70%;
+	}
+
+	.section-image{
+		flex:0.7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-image img{
+		width: 100%;
+		height: 110%;
+		border: 3px  solid #FFF;
+	}
+
+	.section-description{
+		width: 90%;
+	}
+
+	.footer{
+		width: 100%;
+		height: 90%;
+		max-width: 770px;
+		color: #FFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}
+
+@media (max-width:450px){
+	header{
+		position: fixed;
+		z-index: 99;
+	}
+	.header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-container{
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		width: 100vw;
+		height: 0;
+		overflow: hidden;
+		margin-top: 70px;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		transition: all .5s;
+	}
+
+	.menu-opener{
+		display: flex;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	nav{
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+	}
+
+	nav ul li{
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+		border: 0;
+	}
+
+	nav a{
+		font-size: 22px;
+		border: 0;
+	}
+	nav a:hover {
+		color: #585956;
+		border-bottom: 5px solid #c0c2bf;
+	}
+
+	.banner-logo-container{
+		width: 200px;
+		height: 200px;
+	}
+	.banner-description h1{
+		font-size: 32px;
+	}
+
+	.banner-description p{
+		margin-top: -5px;
+		font-size: 22px;
+	}
+
+	.coletion-menu-bar{
+		min-height: 100px;
+		flex-wrap: wrap;
+	}
+	.coletion-menu-item{
+		width: 20%;
+		font-size: 12px;
+	}
+
+	.coletion-content{
+		max-height: 700px;
+	}
+
+	.coletion-item{
+		flex-direction: column;
+		min-height: 600px;
+	}
+	.coletion-par{
+		flex-direction: column;	
+	}
+
+	.coletion-item-image{
+		width: 100%;
+		min-height: 60%;
+	}
+
+	.coletion-item-description{
+		width: 100%;
+		min-height: 40%;
+	}
+
+	.coletion-item-description img{
+		margin-top: 20px;
+		width: 40%;		
+	}
+
+	.coletion-item-description span{
+		margin: 5px 0;
+		text-transform: uppercase;
+	}
+
+	.section-button{
+		width: 200px;
+		padding: 10px;
+		margin: 20px;
+	}
+
+	section .section-content{
+		padding: 10px;
+		flex-direction: column;
+		height: auto;
+		height: 600;
+	}
+
+	.section-informations{
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-news{
+		width: 100%;
+		margin: 10px 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.news-banners{
+		width: 100%;
+		margin: 0px 0;
+		overflow: hidden;
+	}
+
+	.section-news-container{
+		width: 900px;
+		display: flex;
+		margin-left: 0px;
+		padding: 0;
+		transition: all .5s;
+
+	}
+
+	.news{
+		width: 300px;
+		height: 100px;
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		background-color: #DDD;
+	}
+
+	.news img{
+		width: 30%;
+	}
+
+	.section-image{
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-image img{
+		width: 100%;
+		height: 100%;
+		border: 3px  solid #FFF;
+	}
+
+	.section-description{
+		width: 90%;
+	}
+
+	.partners-logo-container{
+		margin-top: 0px;
+	}
+
+	.partners-logo{
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+
+	.actived-partners{
+		width: 110px;
+		height: 110px;
+		border: 2px solid #F2E852;
+		margin: 0;
+	}
+
+	.section-contact{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-contact-left{
+		justify-content: center;
+		align-items: center;
+		border:0;	
+	}
+
+	.contact{
+		width: 300px;
+		justify-content: flex-start;
+		align-items: center;	
+	}
+
+	.section-contact-right{
+		display: none;
+	}
+
+	.footer{
+		width: 100%;
+		height: 100;
+		color: #FFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.footer div:nth-child(2){
+		display: none;
+	}
+
+	.footer-last-child{
+		align-items: center;
+	}
+
+	.footer-last-child p{
+		font-size: 12px;
+		font-weight: 500;
+		margin: 2px 0;
+	}
+
+	.footer-last-child p:last-child{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+}
+
+
