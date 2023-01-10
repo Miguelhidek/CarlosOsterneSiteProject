@@ -71,20 +71,20 @@ nav a:hover {
 	width: 100vw;
 	height: calc(90vh - 100px);
 	background-color: #000;
-	background-image: url('./assets/media/banner-image-1.jpg');
+	background-image: url('./assets/media/carlososterne-bg.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 	color: #FFF;
 }
 
 .banner-content-container{
 	width: 100%;
-	max-width: 1100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-logo-container{
@@ -111,7 +111,7 @@ nav a:hover {
 	margin-top: 10px;
 }
 
-.banner-description h1, .banner-description p{
+.banner-description h1{
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
@@ -120,11 +120,6 @@ nav a:hover {
 
 .banner-description h1{
 	font-size: 54px;
-}
-
-.banner-description p{
-	margin-top: -10px;
-	font-size: 32px;
 }
 
 section{
@@ -503,6 +498,10 @@ footer{
 	border: 2px solid #FFF;
 }
 
+#news-description{
+	display: none;
+}
+
 .section-our-space{
 	width: 100%;
 	min-height: 80%;
@@ -761,12 +760,17 @@ footer{
 		align-items: center;
 		flex-direction: row;
 	}
+
+	.footer-last-child p{
+		text-align: right;
+	}
 }
 
 @media (max-width:450px){
 	header{
 		position: fixed;
 		z-index: 99;
+		height: 60px;
 	}
 	.header{
 		display: flex;
@@ -781,7 +785,7 @@ footer{
 		width: 100vw;
 		height: 0;
 		overflow: hidden;
-		margin-top: 70px;
+		margin-top: 60px;
 		top:0;
 		bottom: 0;
 		left: 0;
@@ -794,6 +798,7 @@ footer{
 		display: flex;
 		padding: 10px;
 		cursor: pointer;
+		height: 100%;
 	}
 
 	nav{
@@ -838,6 +843,7 @@ footer{
 	.coletion-menu-item{
 		width: 20%;
 		font-size: 12px;
+		text-align: center;
 	}
 
 	.coletion-content{
@@ -894,7 +900,7 @@ footer{
 	.section-news{
 		width: 100%;
 		margin: 10px 0;
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: flex-end;
 	}
@@ -925,6 +931,16 @@ footer{
 
 	.news img{
 		width: 30%;
+	}
+
+	#news-description{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+
 	}
 
 	.section-image{

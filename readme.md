@@ -16,46 +16,10 @@ Paleta de Cores 2
 #F2E852 - Amarelo BB
 #F2F2F2 - Cinza
 
-
-Zee Rucci - Coleção/Moda Íntima
-Duduka - Infantil menina / DDK - Infantil menino
-Zigurat - Jeans Adulto 
-
-BGO - Camiseta Ad / Casual
-Decoy - Camiseta Ad / Casual
-Hezag - Camiseta Ad / Casual
-SGLUM - Camiseta Ad / Casual
-Shape - Camiseta/Short / Casual
-
-
-Categoria [Moda Intima]
-	Marca [Zee Rucci]
-		imagem
-		catálogo
-
-Categoria [Infantil]
-	Marca [Duduka & DDK]
-		imagem
-		catálogo
-
-Categoria [Jeans]
-	Marca [Zigurat]
-		imagem
-		catálogo
-
-Categoria [Casual]
-	Marca [BGO]
-		imagem
-		catálogo
-	Marca [Decoy]
-		imagem
-		catálogo
-	Marca [Hezag]
-		imagem
-		catálogo
-	Marca [SGLUM]
-		imagem
-		catálogo
-	Marca [Shape]
-		imagem
-		catálogo
+Características:
+ - Site Estático;
+ - Responsívo(PC, Tablet e Celular);
+ - Alteração de Conteúdos via JS;
+ - Slide de apresentação de Conteúdo;
+ - Slide de apresentação de Banners;
+ 

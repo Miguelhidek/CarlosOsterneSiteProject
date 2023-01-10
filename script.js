@@ -7,8 +7,6 @@ function scrollSections(secid){
 		left:scrollObject.x,
 		behavior:'smooth'
 	});
-	console.log(scrollObject.y);
-	console.log(scrollObject);
 }
 
 //Menu Opener
@@ -221,7 +219,6 @@ function setPatnersContent(){
 	coletionContent.category.forEach((c)=>{
 		c[1].forEach((b)=>{
 			partnerContainer.innerHTML += '<div class="partners-logo"> <img src="'+b.logoImg+'"/>	</div>'
-			//console.log(b.logoImg);
 		});
 	});	
 }
